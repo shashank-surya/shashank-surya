@@ -2,30 +2,30 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Table from 'react-bootstrap/Table';
 
-function Brand() {
+function Category() {
     const [name, setName] = useState("")
     const [image, setImage] = useState(null)
     const [id, setId] = useState("")
-    const [brandList, setBrandList] = useState([]);
+    const [categoryList, setCategoryList] = useState([]);
     const [parent, setParent] = useState("")
 
     useEffect(() => {
-        getBrandList()
+        getCategoryList()
     }, [])
 
-    const getBrandList = () => {
-        axios.get('http://localhost:3002/api/brand').then(res => {
+    const getCategoryList = () => {
+        axios.get('http://localhost:3002/api/category').then(res => {
             console.log(res);
-            setBrandList(res.data)
+            setCategoryList(res.data)
         }).catch(error => {
             console.log("ERROR:", error)
         })
     }
-    const deletebrand = (Brand) => {
-        if (window.confirm("Are you sure to delete this brand?")) {
-            axios.delete(`http://localhost:3002/api/brand/${Brand._id}`).then(res => {
+    const deletecategory = (Category) => {
+        if (window.confirm("Are you sure to delete this category?")) {
+            axios.delete(`http://localhost:3002/api/category/${Category._id}`).then(res => {
                 console.log(res);
-                getBrandList();
+                getCategoryList();
                 alert("Deleted successfully.")
             }).catch(error => {
                 console.log("ERROR:", error)
@@ -42,13 +42,13 @@ function Brand() {
         formData.append("parent", parent);
 
         axios.post(
-            'http://localhost:3002/api/brand',
+            'http://localhost:3002/api/category',
             formData
         ).then(res => {
             console.log(res);
-            getBrandList()
+            getCategoryList()
             console.log(res.data);
-            alert("brand added successfully")
+            alert("category added successfully")
             setName("")
             setImage(null)
         })
@@ -65,16 +65,16 @@ function Brand() {
         formData.append("name", name);
         formData.append("image", image);
         axios.put(
-            `http://localhost:3002/api/brand/${id}`,
+            `http://localhost:3002/api/category/${id}`,
             formData
         ).then(res => {
             console.log(res);
             console.log(res.data);
-            alert("brand updated successfully")
+            alert("category updated successfully")
             setName("")
             setImage(null)
             setId("")
-            getBrandList()
+            getCategoryList()
         })
             .catch(error => {
                 console.log("ERROR: ", error)
@@ -83,11 +83,11 @@ function Brand() {
     }
 
 
-    const handleEdit = (brand) => {
-        setName(brand.name)
-        setImage(brand.image)
-        setId(brand._id)
-        setParent(brand?.parent?._id ? brand.parent._id: "")
+    const handleEdit = (category) => {
+        setName(category.name)
+        setImage(category.image)
+        setId(category._id)
+        setParent(category?.parent?._id ? category.parent._id: "")
 
     }
 
@@ -100,12 +100,12 @@ function Brand() {
     return (
         <>
             <div className='container py-5'>
-                <div className='row'><center><h1 style={{"color":"DodgerBlue"}}>Brand Data</h1></center>
+                <div className='row'><center><h1 style={{"color":"DodgerBlue"}}>Category Data</h1></center>
                     <div className='col-md-2'></div>
                     <div className='col-md-8'>
                         <form onSubmit={id ? handleUpdate : handleSubmit}>
                             <div className='mb-2'>
-                                <label htmlFor='brand name' className='form-lable'>Brand Name</label>
+                                <label htmlFor='category name' className='form-lable'>category Name</label>
                                 <input type="text" className='form-control' value={name} onChange={(e) => setName(e.target.value)} id="" />
                             </div>
                             <div className='mb-2'>
@@ -120,11 +120,11 @@ function Brand() {
                                 )}
                             </div>
                             <div>
-                                <label htmlFor="Parent Brand">Parent Brand:</label>
-                                <select name="Parent Brand" id="root" value={parent} onChange={ (e) => setParent(e.target.value)}>
-                                    <option value="" style={{"color":"green"}}>--SELECT BRAND--</option>
+                                <label htmlFor="Parent Category">Parent Category:</label>
+                                <select name="Parent Category" id="root" value={parent} onChange={ (e) => setParent(e.target.value)}>
+                                    <option value="" style={{"color":"green"}}>--SELECT CATEGORY--</option>
                                     {
-                                        brandList.map( (item, index) => {
+                                        categoryList.map( (item, index) => {
                                             return <option key={index} value={item._id}>{item.name}</option>
                                         })
                                     }
@@ -169,17 +169,17 @@ function Brand() {
                             </thead>
                             <tbody>
                                 {
-                                    brandList?.map((brand, index) => {
+                                    categoryList?.map((category, index) => {
                                         return (
                                             <tr key={index}>
                                                 <td>{index + 1}</td>
-                                                <td>{brand.name}</td>
-                                                <td><img width={100} src={"http://localhost:3002/images/" + brand.image} alt="" /></td>
-                                                <td>{brand?.parent?.name}</td>
+                                                <td>{category.name}</td>
+                                                <td><img width={100} src={"http://localhost:3002/images/" + category.image} alt="" /></td>
+                                                <td>{category?.parent?.name}</td>
                                                 <td>
-                                                    <button className='btn btn-primary' onClick={(e) => handleEdit(brand)}> Edit </button>
+                                                    <button className='btn btn-primary' onClick={(e) => handleEdit(category)}> Edit </button>
                                                     &nbsp;
-                                                    <button className='btn btn-danger' onClick={(e) => deletebrand(brand)}> Delete </button>
+                                                    <button className='btn btn-danger' onClick={(e) => deletecategory(category)}> Delete </button>
                                                 </td>
                                             </tr>
                                         )
@@ -193,4 +193,4 @@ function Brand() {
         </>
     );
 }
-export default Brand;
+export default Category;
