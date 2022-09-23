@@ -5,10 +5,18 @@
   border: 1px;
   }
 .imag{
+<<<<<<< HEAD
   margin-left: 900px;
   width: 300px;
   height: 350px;
   margin-bottom: 100px;
+=======
+  width: 400px;
+  height:500px;
+  margin-left: 600px;
+  
+  padding-bottom: 50px;
+>>>>>>> 3e17aad3d92d3b3f283ae2faecc7167a95cd64ce
 }
 .imag:hover {
   -ms-transform: scale(1.5); /* IE 9 */

@@ -27,7 +27,11 @@ const ShopByBrand = () => {
     return (
         <>
             <div className='container'>
+<<<<<<< HEAD
                 <div className='row'><center><h1 style={{"color":"DodgerBlue"}}>Online Shoping</h1></center>
+=======
+                <div className='row'><center><h1 style={{"color":"DodgerBlue"}}>Shop</h1></center>
+>>>>>>> 3e17aad3d92d3b3f283ae2faecc7167a95cd64ce
                     <center><h3 style={{"color":"geray"}}>Brand: {brandName}</h3></center><hr/>
                    
                     <div className='col-md-0'></div>
@@ -36,7 +40,11 @@ const ShopByBrand = () => {
                         productList.map((item, index) => {
                             return (
                                 <div className='col-md-3'>
+<<<<<<< HEAD
                                     <Card style={{ width: '19rem', height: '30rem' }}>
+=======
+                                    <Card style={{ width: '16rem', height: '15rem' }}>
+>>>>>>> 3e17aad3d92d3b3f283ae2faecc7167a95cd64ce
                                         <Card.Img variant="top" src={constants.API_ASSETS_URL + item.image} />
                                         <Card.Body>
                                             <Card.Title>{item?.name}</Card.Title>

@@ -13,7 +13,11 @@ const mongoose = require("mongoose")
  * 
  * Connect to MongoDB
  */
+<<<<<<< HEAD
  mongoose.connect('mongodb://localhost:27017/blog',
+=======
+ mongoose.connect('mongodb://localhost:27017/shop',
+>>>>>>> 3e17aad3d92d3b3f283ae2faecc7167a95cd64ce
  {
    useNewUrlParser: true,
    //useFindAndModify: false,

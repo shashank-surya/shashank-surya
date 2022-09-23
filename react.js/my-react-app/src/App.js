@@ -2,7 +2,10 @@ import React from "react";
 import './App.css';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+<<<<<<< HEAD
 import Navbar from 'react-bootstrap/Navbar';
+=======
+>>>>>>> 3e17aad3d92d3b3f283ae2faecc7167a95cd64ce
 import User from "./component/User";
 import Category from "./component/category";
 import Brand from "./component/Brand";
@@ -11,11 +14,19 @@ import Shop from "./component/Shop";
 import ProductDetail from "./component/ProductDetail";
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
+<<<<<<< HEAD
+=======
+import Navbar from 'react-bootstrap/Navbar';
+>>>>>>> 3e17aad3d92d3b3f283ae2faecc7167a95cd64ce
 import CategoryDetail from "./component/CategoryDetail";
 import BrandDetail from "./component/BrandDetail";
 import ShopByCategory from "./component/ShopByCategory";
 import ShopByBrand from "./component/ShopByBrand";
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3e17aad3d92d3b3f283ae2faecc7167a95cd64ce
 function app() {
   return (
     <div>
@@ -30,7 +41,11 @@ function app() {
                   <Nav.Link href="/category" style={{"color":"DodgerBlue"}}>Category</Nav.Link>
                   <Nav.Link href="/product" style={{"color":"DodgerBlue"}}>Product</Nav.Link>
                   <Nav.Link href="/shop" style={{"color":"DodgerBlue"}}>Shop</Nav.Link>
+<<<<<<< HEAD
                   <Nav.Link href="/categoryDetail" style={{"color":"DodgerBlue"}}>CategoryDetail</Nav.Link>
+=======
+                  <Nav.Link href="/CategoryDetail" style={{"color":"DodgerBlue"}}>CategoryDetail</Nav.Link>
+>>>>>>> 3e17aad3d92d3b3f283ae2faecc7167a95cd64ce
                   <Nav.Link href="/branddetail" style={{"color":"DodgerBlue"}}>BrandDetail</Nav.Link>
 
                 </Nav>
@@ -38,7 +53,12 @@ function app() {
             </Container>
           </Navbar>
         </div>
+<<<<<<< HEAD
         </div>
+=======
+        
+      </div>
+>>>>>>> 3e17aad3d92d3b3f283ae2faecc7167a95cd64ce
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<User />} />

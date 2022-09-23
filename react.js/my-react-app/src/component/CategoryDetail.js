@@ -3,11 +3,20 @@ import Card from 'react-bootstrap/Card';
 import React, { useEffect, useState } from 'react';
 import constants from '../common/constants'
 import axios from 'axios';
+<<<<<<< HEAD
 
 const CategoryDetail = () => {
 
     const [productList, setProductList] = useState([])
     const [brandList, setCategoryList] = useState([])
+=======
+import Category from './category';
+
+const  CategoryDetail= () => {
+
+    const [productList, setProductList] = useState([])
+    const [categoryList, setCategoryList] = useState([])
+>>>>>>> 3e17aad3d92d3b3f283ae2faecc7167a95cd64ce
 
     useEffect(() => {
         getProductList()
@@ -32,6 +41,7 @@ const CategoryDetail = () => {
         })
     }
 
+<<<<<<< HEAD
     return (
         <>
             <div className='container'>
@@ -46,6 +56,23 @@ const CategoryDetail = () => {
                                         <>
                                             <a href={"/category/" + item._id}> {item.name}</a> |
                                         </>
+=======
+
+    return (
+        <>
+            <div className='container'>
+                <div className='row'><center><h1 style={{"color":"DodgerBlue"}}>Shop</h1></center>
+                    <center><h3 style={{"color":"geray"}}>CategoryDetail</h3></center><hr/>
+                    <div>
+                        <h2>Search by Category</h2>
+                        <div>
+                            {
+                                categoryList?.map( (item)=> {
+                                    return(
+                                        <>
+                                            <a href={"/category/"+item._id}> {item.name}</a> | 
+                                        </>                                        
+>>>>>>> 3e17aad3d92d3b3f283ae2faecc7167a95cd64ce
                                     )
                                 })
                             }
@@ -54,16 +81,28 @@ const CategoryDetail = () => {
                     <div className='col-md-0'></div>
 
                     {
+<<<<<<< HEAD
                         brandList.map((item, index) => {
                             return (
                                 <div className='col-md-3'>
                                     <Card style={{ width: '19rem', height: '30rem' }}>
+=======
+                        categoryList.map((item, index) => {
+                            return (
+                                <div className='col-md-3'>
+                                    <Card style={{ width: '16rem', height: '28rem' }}>
+>>>>>>> 3e17aad3d92d3b3f283ae2faecc7167a95cd64ce
                                         <Card.Img variant="top" src={constants.API_ASSETS_URL + item.image} />
                                         <Card.Body>
                                             <Card.Title>{item?.name}</Card.Title>
                                             <Card.Text>
                                                 {item?.brand?.name} {item?.category?.name}<br />
+<<<<<<< HEAD
                                             </Card.Text>
+=======
+                                                MRP: ₹,{item.sale_price} of MRP: ₹,<del>{item.price}</del>
+                                                 </Card.Text>
+>>>>>>> 3e17aad3d92d3b3f283ae2faecc7167a95cd64ce
                                             <Button variant="primary">Add to Cart</Button>{' '}
                                             <a href={'/product-detail/' + item._id} className='btn btn-success'>More Info</a>
 
@@ -73,10 +112,18 @@ const CategoryDetail = () => {
                                 </div>
                             )
                         })
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3e17aad3d92d3b3f283ae2faecc7167a95cd64ce
                     }
                 </div>
             </div>
         </>
     )
 }
+<<<<<<< HEAD
 export default CategoryDetail;
+=======
+export default  CategoryDetail;
+>>>>>>> 3e17aad3d92d3b3f283ae2faecc7167a95cd64ce
