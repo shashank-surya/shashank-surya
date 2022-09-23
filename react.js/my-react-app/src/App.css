@@ -1,0 +1,21 @@
+.container{
+  background-color: lightgray;
+  padding: 2px;
+  margin-bottom: 1px;
+  border: 1px;
+  }
+.imag{
+  width: 400px;
+  height:500px;
+  margin-left: 600px;
+  
+  padding-bottom: 50px;
+}
+.imag:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+.h1{
+  text-align: center;
+}
