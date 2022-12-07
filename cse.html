@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>NavTatva</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+        <!-- Slick Slider -->
+        <link rel="stylesheet" type="text/css" href="css/slick-theme.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/slick.min.css" />
+
+        <!-- Range Slider -->
+        <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+
+        <!-- FontAwesome -->
+        <link href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet" />
+
+        <!-- Main css -->
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />
+    </head>
+    <body class="CustomizedPage">
+        <div class="wrapper">
+            <!-- Header -->
+            <header class="main-header">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-1 col-3 align-self-center">
+                            <a href="#"><img src="images/logo-white.png" alt="logo" class="img-fluid desk-logo" /></a>
+                        </div>
+                        <div class="col-lg-11 col-9">
+                            <nav class="navbar navbar-expand-lg p-0">
+                               
+
+                                <div class="header-search input-group ms-auto" data-bs-toggle="modal" data-bs-target="#searchPopup">
+                                    <span class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M14.53 15.59a8.25 8.25 0 111.06-1.06l5.69 5.69a.75.75 0 11-1.06 1.06l-5.69-5.69zM2.5 9.25a6.75 6.75 0 1111.74 4.547.746.746 0 00-.443.442A6.75 6.75 0 012.5 9.25z"
+                                            ></path>
+                                        </svg>
+                                    </span>
+                                    <input type="text" class="form-control fs-16" value="Kurtis" aria-label="Kurtis" aria-describedby="addon-wrapping" />
+                                </div>
+                                <ul class="iconBar text-center">
+                                    <li class="list-inline-item">
+                                        <a class="wishlist rounded-circle d-block" href="#" title=""><img src="images/wishlist.png" alt="" /></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="cart rounded-circle d-block" href="#" title=""><img src="images/cart.png" alt="" /></a>
+                                    </li>
+                                      <li class="list-inline-item">
+                                        
+                                        <div class="btn-group">
+ <a class="user rounded-circle d-block" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" title=""><img width="32" height="32" src="images/user.png" alt="" /></a>
+
+  <ul class="dropdown-menu shadow">
+    <p class="fs-20 font-sb text-color-3 ps-3 ">Hey Darshil</p>
+    <li><hr class="dropdown-divider"></li>
+    <li class="fs-14 font-r text-color-2"><img class="d-inline-block" src="images/p-profile.png" alt=""><a class="dropdown-item d-inline-block" href="#">Profile</a></li>
+    <li class="fs-14 font-r text-color-2 "><img class="d-inline-block" src="images/seller.png" alt=""><a class="dropdown-item d-inline-block" href="#">Your Seller Account</a></li>
+    <li class="fs-14 font-r text-color-2 "><img class="d-inline-block" src="images/order.png" alt=""><a class="dropdown-item d-inline-block" href="#">Orders & Returns</a></li>
+
+    <li><hr class="dropdown-divider"></li>
+    <li class="fs-14 font-r text-color-2"><img class="d-inline-block" src="images/payment.png" alt=""><a class="dropdown-item d-inline-block" href="#">Saved Payment Methods</a></li>
+    <li class="fs-14 font-r text-color-2 "><img class="d-inline-block" src="images/map.png" alt=""><a class="dropdown-item d-inline-block" href="#">Saved Addresses</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li class="fs-14 font-r text-color-2"><img  class="d-inline-block"  src="images/logout.png" alt=""><a class="dropdown-item d-inline-block" href="#">Sign Out</a></li>
+  </ul>
+</div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <!-- End Header -->
+        </div>
+
+        <section class="customized text-center position-absolute">
+            <div class="bannerContent">
+                <h1>A <span class="text-color-4">Customised</span><span class="d-block"></span> Shopping Experience</h1>
+                <p class="fs-24 text-color-8 pt-4">Connect with our in-store seller right from your home.</p>
+
+                <div class="form-group d-block d-md-flex align-items-center justify-content-center mt-4 mt-md-4">
+                    <input type="text" class="form-control" value="Ex: 809090" />
+                    <button type="submit" class="btn ms-3 mt-4 mt-md-0">Enter The Store</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cart Popup -->
+        <div class="modal fade cart-popup" id="exampleModal">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="modal-body p-0">
+                        <div class="row m-0">
+                            <div class="col-12 col-md-5 bg-1 left-area">
+                                <div class="cart-image text-center">
+                                    <h6>Anubhutee</h6>
+                                    <p>Women Teal Blue Beige Ethnic Motifs Printed Straight Kurti</p>
+                                    <img src="images/img1.png" class="img-fluid" />
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-7">
+                                <div class="cart-right-area">
+                                    <h4 class="text-center">
+                                        <img src="images/bucket.png" class="img-fluid d-block mx-auto mb-2" />
+                                        Bulk Order
+                                    </h4>
+                                    <div class="table-responsive mt-5">
+                                        <table class="table cart-table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <span>Size</span>
+                                                        <select class="form-select">
+                                                            <option selected>36</option>
+                                                            <option value="1">28</option>
+                                                            <option value="2">34</option>
+                                                            <option value="3">40</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <span>Qty</span>
+                                                        <select class="form-select">
+                                                            <option selected>10</option>
+                                                            <option value="1">20</option>
+                                                            <option value="2">34</option>
+                                                            <option value="3">40</option>
+                                                        </select>
+                                                    </td>
+                                                    <td class="price">₹3,789</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>Size</span>
+                                                        <select class="form-select">
+                                                            <option selected>36</option>
+                                                            <option value="1">28</option>
+                                                            <option value="2">34</option>
+                                                            <option value="3">40</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <span>Qty</span>
+                                                        <select class="form-select">
+                                                            <option selected>10</option>
+                                                            <option value="1">20</option>
+                                                            <option value="2">34</option>
+                                                            <option value="3">40</option>
+                                                        </select>
+                                                    </td>
+                                                    <td class="price">₹3,789</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <span>Size</span>
+                                                        <select class="form-select">
+                                                            <option selected>36</option>
+                                                            <option value="1">28</option>
+                                                            <option value="2">34</option>
+                                                            <option value="3">40</option>
+                                                        </select>
+                                                    </td>
+                                                    <td>
+                                                        <span>Qty</span>
+                                                        <select class="form-select">
+                                                            <option selected>10</option>
+                                                            <option value="1">20</option>
+                                                            <option value="2">34</option>
+                                                            <option value="3">40</option>
+                                                        </select>
+                                                    </td>
+                                                    <td class="price">₹3,789</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="text-center mb-4">
+                                        <button type="button" class="cartrow-btn"><i class="fas fa-plus fa-fw"></i> Add Another Size</button>
+                                    </div>
+                                    <div class="subtotal d-md-flex justify-content-between">
+                                        <div class="subtotal-price">
+                                            <span class="textlight">Sub Total</span>
+                                            <h3>₹14,589.94</h3>
+                                        </div>
+                                        <div class="subtotal-btn">
+                                            <button type="button" class="btn">Add To Cart</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>         
+    
+
+        <!-- JQuery -->
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="js/slick.min.js"></script>
+        <script src="js/jquery-ui.min.js"></script>
+        <script src="js/custom.js"></script>
+    </body>
+</html>

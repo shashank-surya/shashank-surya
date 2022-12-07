@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>NavTatva</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Slick Slider -->
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/slick.min.css" />
+    <!-- Range Slider -->
+    <link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+    <!-- FontAwesome -->
+    <link href="https://site-assets.fontawesome.com/releases/v6.1.1/css/all.css" rel="stylesheet" />
+    <!-- Main css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" /> </head>
+
+<body class="shoppingCart">
+    <div class="wrapper">
+        <!-- Header -->
+        <header class="main-header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-1 col-3 align-self-center">
+                        <a href="#"><img src="images/logo-2.png" alt="logo" class="img-fluid desk-logo" /></a>
+                    </div>
+                    <div class="col-lg-11 col-9 ">
+                        <nav class="navbar navbar-expand-lg p-0">
+                            <div class="header-search input-group ms-auto" data-bs-toggle="modal" data-bs-target="#searchPopup"> <span class="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                            <path
+                                                fill-rule="evenodd"
+                                                d="M14.53 15.59a8.25 8.25 0 111.06-1.06l5.69 5.69a.75.75 0 11-1.06 1.06l-5.69-5.69zM2.5 9.25a6.75 6.75 0 1111.74 4.547.746.746 0 00-.443.442A6.75 6.75 0 012.5 9.25z"
+                                            ></path>
+                                        </svg>
+                                    </span>
+                                <input type="text" class="form-control fs-16" value="Kurtis" aria-label="Kurtis" aria-describedby="addon-wrapping" />
+                            </div>
+                            <ul class="iconBar text-center">
+                                <li class="list-inline-item">
+                                    <a class="wishlist rounded-circle d-block" href="#" title=""><img src="images/wishlist.png" alt="" /></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="cart rounded-circle d-block" href="#" title=""><img src="images/cart.png" alt="" /></a>
+                                </li>
+                                   <li class="list-inline-item">
+                                        
+                                        <div class="btn-group">
+ <a class="user rounded-circle d-block" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" title=""><img width="32" height="32" src="images/user.png" alt="" /></a>
+
+  <ul class="dropdown-menu shadow">
+    <p class="fs-20 font-sb text-color-3 ps-3 ">Hey Darshil</p>
+    <li><hr class="dropdown-divider"></li>
+    <li class="fs-14 font-r text-color-2"><img class="d-inline-block" src="images/p-profile.png" alt=""><a class="dropdown-item d-inline-block" href="#">Profile</a></li>
+    <li class="fs-14 font-r text-color-2 "><img class="d-inline-block" src="images/seller.png" alt=""><a class="dropdown-item d-inline-block" href="#">Your Seller Account</a></li>
+    <li class="fs-14 font-r text-color-2 "><img class="d-inline-block" src="images/order.png" alt=""><a class="dropdown-item d-inline-block" href="#">Orders & Returns</a></li>
+
+    <li><hr class="dropdown-divider"></li>
+    <li class="fs-14 font-r text-color-2"><img class="d-inline-block" src="images/payment.png" alt=""><a class="dropdown-item d-inline-block" href="#">Saved Payment Methods</a></li>
+    <li class="fs-14 font-r text-color-2 "><img class="d-inline-block" src="images/map.png" alt=""><a class="dropdown-item d-inline-block" href="#">Saved Addresses</a></li>
+    <li><hr class="dropdown-divider"></li>
+    <li class="fs-14 font-r text-color-2"><img  class="d-inline-block"  src="images/logout.png" alt=""><a class="dropdown-item d-inline-block" href="#">Sign Out</a></li>
+  </ul>
+</div>
+                                    </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End Header -->
+        <section class="cartItem mt-4 mt-md-5">
+            <h1 class="fs-40 font-b text-color-2 list-inline-item">Your Shopping Bag</h1>
+            <div class="row">
+                <div class="col-md-12 col-lg-8">
+                    <div class="bgbar position-relative mt-4">
+                        <div class="row">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> </div>
+                            <div class="col-3">
+                                <div class="imgbar "><img class="w-100" src="images/img1.png" alt=""></div>
+                            </div>
+                            <div class="col-9 right-col">
+                                <h3 class="fs-16 font-sb text-color-2">Anubhutee</h3>
+                                <p class="fs-14 font-r text-color-1 pt-1 prodes">Women Teal Blue & Beige Ethnic Motifs Printed Straight Kurti</p>
+                                <div class="d-flex py-3 align-items-center">
+                                    <p class="fs-14 font-sb text-color-1">Size: <span class="text-color-2">XL</span></p>
+                                    <p class="fs-14 font-sb text-color-1 ms-2">Colour: <span class="text-color-2">Blue</span></p>
+                                    <div class="d-flex topBarAlign">
+                                        <p class="fs-16 font-sb text-color-2 align-self-center me-3">₹3,499</p>
+                                        <div class="quantity d-flex px-2">
+                                            <label class="fs-14 font-r text-color-1 pt-1">Qty</label>
+                                            <select class="form-select fs-14 font-r" aria-label="Default select example">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex mt-4"> <a class="fs-14 font-sb text-color-3" href="#">Move to Wishlist</a> <a class="fs-14 font-sb text-color-3 ms-4 text-red" href="#">Remove</a> </div>
+                                
+                                <div class="discount-offer text-white">
+                                   
+                                    <p class="fs-13 font-r">Recommended for Your Shopping Bag</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bgbar position-relative mt-4">
+                        <div class="row">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> </div>
+                            <div class="col-3">
+                                <div class="imgbar "><img class="w-100" src="images/img1.png" alt=""></div>
+                            </div>
+                            <div class="col-9 right-col">
+                                <h3 class="fs-16 font-sb text-color-2">Anubhutee</h3>
+                                <p class="fs-14 font-r text-color-1 pt-1 prodes">Women Teal Blue & Beige Ethnic Motifs Printed Straight Kurti</p>
+                                <div class="d-flex py-3 align-items-center">
+                                    <p class="fs-14 font-sb text-color-1">Size: <span class="text-color-2">XL</span></p>
+                                    <p class="fs-14 font-sb text-color-1 ms-2">Colour: <span class="text-color-2">Blue</span></p>
+                                    <div class="d-flex topBarAlign">
+                                        <p class="fs-16 font-sb text-color-2 align-self-center me-3">₹3,499</p>
+                                        <div class="quantity d-flex px-2">
+                                            <label class="fs-14 font-r text-color-1 pt-1">Qty</label>
+                                            <select class="form-select fs-14 font-r" aria-label="Default select example">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex mt-4"> <a class="fs-14 font-sb text-color-3" href="#">Move to Wishlist</a> <a class="fs-14 font-sb text-color-3 ms-4 text-red" href="#">Remove</a> </div>
+                                
+                                <div class="discount-offer text-white">
+                                   
+                                    <p class="fs-13 font-r">Recommended for Your Shopping Bag</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bgbar position-relative mt-4">
+                        <div class="row">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> </div>
+                            <div class="col-3">
+                                <div class="imgbar "><img class="w-100" src="images/img1.png" alt=""></div>
+                            </div>
+                            <div class="col-9 right-col">
+                                <h3 class="fs-16 font-sb text-color-2">Anubhutee</h3>
+                                <p class="fs-14 font-r text-color-1 pt-1 prodes">Women Teal Blue & Beige Ethnic Motifs Printed Straight Kurti</p>
+                                <div class="d-flex py-3 align-items-center">
+                                    <p class="fs-14 font-sb text-color-1">Size: <span class="text-color-2">XL</span></p>
+                                    <p class="fs-14 font-sb text-color-1 ms-2">Colour: <span class="text-color-2">Blue</span></p>
+                                    <div class="d-flex topBarAlign">
+                                        <p class="fs-16 font-sb text-color-2 align-self-center me-3">₹3,499</p>
+                                        <div class="quantity d-flex px-2">
+                                            <label class="fs-14 font-r text-color-1 pt-1">Qty</label>
+                                            <select class="form-select fs-14 font-r" aria-label="Default select example">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex mt-4"> <a class="fs-14 font-sb text-color-3" href="#">Move to Wishlist</a> <a class="fs-14 font-sb text-color-3 ms-4" href="#">Don’t Show This</a> </div>
+                                
+                                <div class="discount-offer text-white">
+                                   
+                                    <p class="fs-13 font-r">Recommended for Your Shopping Bag</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="fs-20 font-sb text-color-2 mt-5">You May Also like</h3>
+                    <div class="bgbar position-relative mt-4">
+                        <div class="row">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> </div>
+                            <div class="col-3">
+                                <div class="imgbar "><img class="w-100" src="images/img1.png" alt=""></div>
+                            </div>
+                            <div class="col-9 right-col">
+                                <h3 class="fs-16 font-sb text-color-2">Anubhutee</h3>
+                                <p class="fs-14 font-r text-color-1 pt-1 prodes">Women Teal Blue & Beige Ethnic Motifs Printed Straight Kurti</p>
+                                <div class="d-flex py-3 align-items-center">
+                                    <p class="fs-14 font-sb text-color-1">Size: <span class="text-color-2">XL</span></p>
+                                    <p class="fs-14 font-sb text-color-1 ms-2">Colour: <span class="text-color-2">Blue</span></p>
+                                    <div class="d-flex topBarAlign">
+                                        <p class="fs-16 font-sb text-color-2 align-self-center me-3">₹3,499</p>
+                                        <div class="quantity d-flex px-2">
+                                            <label class="fs-14 font-r text-color-1 pt-1">Qty</label>
+                                            <select class="form-select fs-14 font-r" aria-label="Default select example">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex mt-4"> <a class="fs-14 font-sb text-color-3" href="#">Move to Wishlist</a> <a class="fs-14 font-sb text-color-3 ms-4" href="#">Don’t Show This</a> </div>
+                                
+                                <div class="discount-offer text-white">
+                                   
+                                    <p class="fs-13 font-r">Recommended for Your Shopping Bag</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bgbar position-relative mt-4">
+                        <div class="row">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> </div>
+                            <div class="col-3">
+                                <div class="imgbar "><img class="w-100" src="images/img1.png" alt=""></div>
+                            </div>
+                            <div class="col-9 right-col">
+                                <h3 class="fs-16 font-sb text-color-2">Anubhutee</h3>
+                                <p class="fs-14 font-r text-color-1 pt-1 prodes">Women Teal Blue & Beige Ethnic Motifs Printed Straight Kurti</p>
+                                <div class="d-flex py-3 align-items-center">
+                                    <p class="fs-14 font-sb text-color-1">Size: <span class="text-color-2">XL</span></p>
+                                    <p class="fs-14 font-sb text-color-1 ms-2">Colour: <span class="text-color-2">Blue</span></p>
+                                    <div class="d-flex topBarAlign">
+                                        <p class="fs-16 font-sb text-color-2 align-self-center me-3">₹3,499</p>
+                                        <div class="quantity d-flex px-2">
+                                            <label class="fs-14 font-r text-color-1 pt-1">Qty</label>
+                                            <select class="form-select fs-14 font-r" aria-label="Default select example">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex mt-4"> <a class="fs-14 font-sb text-color-3" href="#">Move to Wishlist</a> <a class="fs-14 font-sb text-color-3 ms-4" href="#">Don’t Show This</a> </div>
+                                
+                                <div class="discount-offer text-white">
+                                   
+                                    <p class="fs-13 font-r">Recommended for Your Shopping Bag</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bgbar position-relative mt-4">
+                        <div class="row">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"> </div>
+                            <div class="col-3">
+                                <div class="imgbar "><img class="w-100" src="images/img1.png" alt=""></div>
+                            </div>
+                            <div class="col-9 right-col">
+                                <h3 class="fs-16 font-sb text-color-2">Anubhutee</h3>
+                                <p class="fs-14 font-r text-color-1 pt-1 prodes">Women Teal Blue & Beige Ethnic Motifs Printed Straight Kurti</p>
+                                <div class="d-flex py-3 align-items-center">
+                                    <p class="fs-14 font-sb text-color-1">Size: <span class="text-color-2">XL</span></p>
+                                    <p class="fs-14 font-sb text-color-1 ms-2">Colour: <span class="text-color-2">Blue</span></p>
+                                    <div class="d-flex topBarAlign">
+                                        <p class="fs-16 font-sb text-color-2 align-self-center me-3">₹3,499</p>
+                                        <div class="quantity d-flex px-2">
+                                            <label class="fs-14 font-r text-color-1 pt-1">Qty</label>
+                                            <select class="form-select fs-14 font-r" aria-label="Default select example">
+                                                <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex mt-4"> <a class="fs-14 font-sb text-color-3" href="#">Move to Wishlist</a> <a class="fs-14 font-sb text-color-3 ms-4" href="#">Don’t Show This</a> </div>
+                                
+                                <div class="discount-offer text-white">
+                                   
+                                    <p class="fs-13 font-r">Recommended for Your Shopping Bag</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-12 col-lg-4">
+                    <div class="w-100 mt-4">
+                           <div class="discountBG position-relative">
+                        <a href="#">
+                          <div class="imgbar"> <img class="w-100" src="images/discountAd.png" alt=""></div> 
+                          <div class="checkbar">
+                              <p class="fs-16 font-r"><img class="me-2" src="images/cart-shop.png" alt="">Checkout Within the next 24 Hours </p>
+                          </div>
+                           <div class="mt-4">
+                          <p class="fs-16 font-m text-color-1">Get upto </p>
+                          <h5 class="fs-48 font-bk mt-2">₹1,500</h5>
+                          <p class="fs-16 font-r text-color-1  mt-2">discount on your first order at </p>
+                          <h4 class="fs-24 font-b text-color-2 mt-4"> <img class="me-2" src="images/nunchi.png" alt="">Nunchi Jewellery</h4>
+                            </div>
+                        </a>
+                        
+                     </div>
+                         <a href="button" class="font-sb text-color-3 fs-16 justify-content-end align-items-end d-flex ms-auto mt-3 me-2">
+                        Multiple offers waiting for you after checkout
+                        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-arrow-up-right ms-2" viewBox="0 0 16 16">
+                           <path fill-rule="evenodd" d="M14 2.5a.5.5 0 0 0-.5-.5h-6a.5.5 0 0 0 0 1h4.793L2.146 13.146a.5.5 0 0 0 .708.708L13 3.707V8.5a.5.5 0 0 0 1 0v-6z"></path>
+                        </svg>
+                     </a>
+                    </div>
+                    <div class="bg-white border p-3 mt-4 shipping">
+                        <div class="row">
+                            <div class="col-md-12 py-2"><p class="fs-19 font-r text-color-2"><span class="font-sb">2 of 4 Items</span> selected for checkout</p>
+                             </div>
+                            <div class="col-md-12">
+                                <div class="gray"><p class="fs-14 font-r text-color-2">Add items worth <span class="font-sb"> ₹1,800 </span> more to avail <span class="font-sb text-color-9">Free Shipping</span></p></div>                           </div>
+                            <div class="col-md-12 d-flex mt-2 mt-lg-5">
+                                <h3 class="fs-19 font-sb text-color-2">Sub Total</h3>
+                                <h3 class="fs-24 font-sb text-color-3 ms-auto">₹16,994</h3>
+                            </div>
+                            <div class="col-md-12 mt-4">
+                                <a href="#" class="btn fs-18 w-100" tabindex="0">Proceed to Checkout</a>
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 mt-4">
+    
+  <div class="mb-3 promocode ">
+    <label class="col-form-label fs-14 font-sb text-color-1">Have a Promo Code?</label>
+    <div class="col-sm-12 position-relative">
+      <input type="text" class="form-control" >
+       <a href="#" class=" fs-16 font-sb text-color-3 text-end apply">Apply</a>
+    </div>
+   
+  </div>
+
+                        </div>
+                           <div class="col-md-12 mt-4">  
+                              <label class="col-form-label fs-14 font-sb text-color-1 mb-2">Ongoing Offers</label> 
+                                <div class="position-relative">
+                                    <a href="#">
+                                 <img class="w-100" src="images/card-1.png" alt="">
+                                  <div class="carddata align-items-start d-flex flex-column h-100 justify-content-between w-100 ">
+                                    <div>
+                                      <h4 class="fs-24 font-sb text-white">Upto 20% off</h4>
+                                      <p class="fs-16 font-r text-color-8">on selected brands</p>
+                                      </div>
+                                      <div class="d-flex w-100">
+                                       <p class="fs-16 font-sb text-white ltr-space">NAVTATVA2022 <img src="images/card-icon.png" alt=""></p>
+                                          <p class="fs-12 font-r text-color-8 ms-auto">Valid till  <small class="fs-16 font-r text-white">30th July</small></p>
+                                          </div>
+                                  </div>
+                              </a>
+
+                             </div>
+                                <div class="position-relative mt-4">
+                                    <a href="#">
+                                 <img class="w-100" src="images/card-2.png" alt="">
+                                  <div class="carddata align-items-start d-flex flex-column h-100 justify-content-between w-100 ">
+                                    <div>
+                                      <h4 class="fs-24 font-sb text-white">Upto 20% off</h4>
+                                      <p class="fs-16 font-r text-color-8">on selected brands</p>
+                                      </div>
+                                      <div class="d-flex w-100">
+                                       <p class="fs-16 font-sb text-white ltr-space">NAVTATVA2022 <img src="images/card-icon.png" alt=""></p>
+                                          <p class="fs-12 font-r text-color-8 ms-auto ">Valid till  <small class="fs-16 font-r text-white">30th July</small></p>
+                                          </div>
+                                  </div>
+                              </a>
+                              
+                             </div>
+                              </div>
+                                <div class="col-md-12 mt-4">  
+                              <label class="col-form-label fs-14 font-sb text-color-1 mb-2">Redeem Coins</label> 
+                                <div class="position-relative">
+                                    <a href="#">
+                                 <img class="w-100" src="images/card-3.png" alt="">
+                                  <div class="carddata align-items-start d-flex flex-column h-100 justify-content-between w-100 ">
+                                    <div>
+                                      <h4 class="fs-24 font-sb text-white">+1000 Coins</h4>
+                                      <p class="fs-16 font-r text-color-8">on orders above ₹899</p>
+                                  </div>
+                                      <div class="d-flex w-100">
+                                       <p class="fs-16 font-sb text-white ltr-space">ACTIVATED ON CHECKOUT </p>
+                                          
+                                          </div>
+                                  </div>
+                              </a>
+                              
+                             </div>
+                                
+                              </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="mt-5 jwellarySec">
+             <div class="row">
+                 <div class="col-xl-5 mb-4 mb-xl-0 align-self-center">
+                     <div class="leftBar text-center text-xl-start">
+                         <p class="fs-80 text-color-2 font-b">Pair It up </p>
+                         <p class="fs-34 text-color-1 ps-xl-5">with some</p>
+                         <p class="fs-134 text-color-1 color-text font-b">Jewellery</p>
+                         <a href="#" class="btn w-100 fs-20 mt-4"><span class="text-white me-2" style="font-style:normal">Visit</span><img class="" src="images/Black.svg" alt=""> Nunchi Jewellery</a>
+
+                     </div>
+                 </div>
+                 <div class="col-xl-7">
+                     <div class="row">
+                         <div class="col-md-4 overhead position-relative mb-4 mb-md-0">
+                             <img class="w-100 d-none d-md-block" src="images/jwelary-1.jpg" alt="">
+                              <img class="w-100  d-block d-md-none" src="images/jwelary-1-m.jpg" alt="">
+                             <h4 class="fs-14 text-color-2 font-m">Bangles<span class="font-r d-block">Starting from ₹1299</span></h4>
+                         </div>
+                          <div class="col-md-4 overhead ">
+                            <div class="row">
+                                <div class="col-md-12 h-100  position-relative  mb-4 mb-md-0">
+                                     <img class="w-100" src="images/jwelary-2.jpg" alt="">
+                             <h4 class="fs-14 text-color-2 font-m">Ear Rings<span class="font-r d-block">Starting from ₹1299</span></h4>
+                                </div>
+                                <div class="col-md-12 h-100 align-item-end justify-content-end position-relative mt-3">
+                                     <img class="w-100" src="images/jwelary-2.jpg" alt="">
+                             <h4 class="fs-14 text-color-2 font-m">Ear Rings<span class="font-r d-block">Starting from ₹1299</span></h4>
+                                </div>
+                            </div>
+                            
+                         </div>
+                          <div class="col-md-4 overhead position-relative  mt-4 mt-md-0">
+                               <img class="w-100 d-none d-md-block" src="images/jwelary-3.jpg" alt="">
+                              <img class="w-100  d-block d-md-none" src="images/jwelary-3-m.jpg" alt="">
+                             <h4 class="fs-14 text-color-2 font-m">Ear Rings<span class="font-r d-block">Starting from ₹1299</span></h4>
+                         </div>
+                     </div>
+
+
+                 </div>
+             </div>
+        </section>
+        <section class="mt-4 mt-md-5 pb-5">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="heading3">
+                                <h2><span class="bg10">Similar Products</span></h2>
+                            </div>
+                        </div>
+                       <div class="col-md-12 mt-0 mt-lg-5 position-relative sliderView Occasion">
+                            <div class="ocassion-slider">
+                                <div class="thumb position-relative text-center">
+                                    <div class="bg1">
+                                        <a href="#"><img class="w-100" src="images/Occassion1.png" alt="" /></a>
+                                        <div class="hoverBlock">
+                                            <div class="overlay text-center">
+                                                <p class="fs-13 font-r text-color-1">Women Teal Blue & Beige Ethnic Motifs Printed Straight Kurti</p>
+                                                <p class="fs-19 font-sb text-color-3 py-3">₹3,450</p>
+                                                <a href="#" class="btn-border fs-13 text-color-3">More Info</a>
+                                                <a href="#" class="btn fs-13">Add to Cart</a>
+                                            </div>
+                                            <div class="speaker">
+                                                <a href="#" class="d-block mb-5" tabindex="0">
+                                                    <img src="images/wishlist-detail.png" />
+                                                </a>
+                                                <a href="#" class="d-block mb-5" tabindex="0">
+                                                    <img src="images/volume.png" />
+                                                </a>
+                                                <a href="#" class="d-block mb-5" tabindex="0">
+                                                    <img src="images/swap.png" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thumb position-relative text-center">
+                                    <div class="bg2">
+                                        <a href="#"><img class="w-100" src="images/Occassion2.png" alt="" /></a>
+                                        <div class="hoverBlock">
+                                            <div class="overlay text-center">
+                                                <p class="fs-13 font-r text-color-1">Women Teal Blue & Beige Ethnic Motifs Printed Straight Kurti</p>
+                                                <p class="fs-19 font-sb text-color-3 py-3">₹3,450</p>
+                                                <a href="#" class="btn-border fs-13 text-color-3">More Info</a>
+                                                <a href="#" class="btn fs-13">Add to Cart</a>
+                                            </div>
+                                            <div class="speaker">
+                                                <a href="#" class="d-block mb-5" tabindex="0">
+                                                    <img src="images/wishlist-detail.png" />
+                                                </a>
+                                                <a href="#" class="d-block mb-5" tabindex="0">
+                                                    <img src="images/volume.png" />
+                                                </a>
+                                                <a href="#" class="d-block mb-5" tabindex="0">
+                                                    <img src="images/swap.png" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thumb position-relative text-center">
+                                    <div class="bg3">
+                                        <a href="#"><img class="w-100" src="images/Occassion3.png" alt="" /></a>
+                                        <div class="hoverBlock">
+                                            <div class="overlay text-center">
+                                                <p class="fs-13 font-r text-color-1">Women Teal Blue & Beige Ethnic Motifs Printed Straight Kurti</p>
+                                                <p class="fs-19 font-sb text-color-3 py-3">₹3,450</p>
+                                                <a href="#" class="btn-border fs-13 text-color-3">More Info</a>
+                                                <a href="#" class="btn fs-13">Add to Cart</a>
+                                            </div>
+                                            <div class="speaker">
+                                                <a href="#" class="d-block mb-5" tabindex="0">
+                                                    <img src="images/wishlist-detail.png" />
+                                                </a>
+                                                <a href="#" class="d-block mb-5" tabindex="0">
+                                                    <img src="images/volume.png" />
+                                                </a>
+                                                <a href="#" class="d-block mb-5" tabindex="0">
+                                                    <img src="images/swap.png" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thumb position-relative text-center">
+                                    <div class="bg4">
+                                        <a href="#"><img class="w-100" src="images/Occassion4.png" alt="" /></a>
+                                        <div class="hoverBlock">
+                                            <div class="overlay text-center">
+                                                <p class="fs-13 font-r text-color-1">Women Teal Blue & Beige Ethnic Motifs Printed Straight Kurti</p>
+                                                <p class="fs-19 font-sb text-color-3 py-3">₹3,450</p>
+                                                <a href="#" class="btn-border fs-13 text-color-3">More Info</a>
+                                                <a href="#" class="btn fs-13">Add to Cart</a>
+                                            </div>
+                                            <div class="speaker">
+                                                <a href="#" class="d-block mb-5" tabindex="0">
+                                                    <img src="images/wishlist-detail.png" />
+                                                </a>
+                                                <a href="#" class="d-block mb-5" tabindex="0">
+                                                    <img src="images/volume.png" />
+                                                </a>
+                                                <a href="#" class="d-block mb-5" tabindex="0">
+                                                    <img src="images/swap.png" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="thumb position-relative text-center">
+                                    <div class="bg4">
+                                        <a href="#"><img class="w-100" src="images/Occassion4.png" alt="" /></a>
+                                        <div class="hoverBlock">
+                                            <div class="overlay text-center">
+                                                <p class="fs-13 font-r text-color-1">Women Teal Blue & Beige Ethnic Motifs Printed Straight Kurti</p>
+                                                <p class="fs-19 font-sb text-color-3 py-3">₹3,450</p>
+                                                <a href="#" class="btn-border fs-13 text-color-3">More Info</a>
+                                                <a href="#" class="btn fs-13">Add to Cart</a>
+                                            </div>
+                                            <div class="speaker">
+                                                <a href="#" class="d-block mb-5" tabindex="0">
+                                                    <img src="images/wishlist-detail.png" />
+                                                </a>
+                                                <a href="#" class="d-block mb-5" tabindex="0">
+                                                    <img src="images/volume.png" />
+                                                </a>
+                                                <a href="#" class="d-block mb-5" tabindex="0">
+                                                    <img src="images/swap.png" />
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+    </div>
+    <!-- JQuery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
